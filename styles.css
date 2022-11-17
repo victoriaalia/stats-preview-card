@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&family=Lexend+Deca:wght@100;300;400&display=swap");
+
+:root {
+  --Main-Background: linear-gradient(
+    135deg,
+    hsl(233, 47%, 7%) 0%,
+    hsl(215, 38%, 16%) 100%
+  );
+  --Card-Background: linear-gradient(
+    90deg,
+    hsla(244, 38%, 16%) 0%,
+    hsla(277, 64%, 60%) 90%
+  );
+  --Accent: hsla(277, 64%, 61%);
+
+  --Main-Heading-Stats: hsl(0, 0%, 100%);
+  --Main-Paragraph: hsla(0, 0%, 100%, 0.75);
+  --Stat-Headings: hsla(0, 0%, 100%, 0.6);
+
+  --Heading: "Inter", sans-serif;
+  --Body: "Lexend Deca", sans-serif;
+
+  --Transition: 0.8s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* LAYOUT */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: var(--Main-Background);
+  padding: 1.25rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column-reverse;
+  color: var(--Main-Paragraph);
+  background: var(--Card-Background);
+  border-radius: 0.63rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+  transition: var(--Transition);
+}
+
+article > * {
+  flex-basis: 50%;
+}
+
+
+/* CARD CONTENT */
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.card-heading {
+  font-size: clamp(1.38rem, calc(1.05rem + 1.65vw), 2.19rem);
+  font-family: var(--Heading);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: hs1 (277, 64%, 61%);
+
+  margin-bottom: 0.75rem;
+  transition: var(--Transition);
+}
+
+.card-heading span {
+  color: var(--Accent);
+}
+
+.card-paragraph {
+  font-size: clamp(0.75rem, calc(0.65rem + 0.51vw), 1rem);
+  font-family: var(--Body);
+  font-weight: 300;
+  line-height: 1.9;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  transition: var(--Transition);
+}
+
+
+/* STATISTICS */
+
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  transition: var(--Transition);
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.statistic p {
+  font-size: clamp(1rem, calc(0.85rem + 0.76vw), 1.38rem);
+  font-family: var(--Heading);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--Main-Heading-Stats);
+  transition: var(--Transition);
+}
+
+.statistic span {
+  font-size: 0.75rem;
+  font-family: var(--Body);
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--Stat-Headings);
+}
+
+/* IMAGE */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+  transition: var(--Transition);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 31.25em) {
+  article {
+    max-width: 37.5rem;
+  }
+
+  .card-content {
+    padding: 1.88rem;
+  }
+
+  .statistics-container {
+    flex-direction: row;
+    gap: 3.13rem;
+    padding: 1.25rem;
+  }
+}
+
+
+@media (min-width: 51.88em) {
+  article {
+    max-width: 69.38rem;
+    flex-direction: row;
+  }
+
+  .card-content {
+    padding: 4.38rem;
+    justify-content: space-between;
+  }
+
+  .card-heading {
+    text-align: start;
+    margin-bottom: 1.88rem;
+  }
+
+  .card-paragraph {
+    text-align: start;
+  }
+
+  .statistics-container {
+    width: 90%;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.25rem 1.25rem 0px 0px;
+  }
+
+  .statistic {
+    align-items: flex-start;
+  }
+}
+
+
+@media (min-width: 56.25em) {
+  .card-content {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4.375rem;
+  }
+
+  .card-paragraph {
+    margin-bottom: 0px;
+  }
+}
+
+.attribution {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: white;
+    font-family: var(--Body);
+  }
