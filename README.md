@@ -1,6 +1,6 @@
-# Frontend Mentor - Calculator app solution
+# Frontend Mentor - Stats Preview Card Component
 
-Esta es la solución para: [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29).
+Esta es la solución para: [Stats Preview Card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-Efr1_gJtm7).
 
 ## Table of contents
 
