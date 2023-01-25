@@ -1,10 +1,10 @@
-# Frontend Mentor - Stats Preview Card Component
+# Stats Preview Card Component
 
 Esta es la solución para: [Stats Preview Card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-Efr1_gJtm7).
 
 ## 🤓 Overview
 
-### The challenge
+### 💡 The challenge
 
 Los usuarios serán capaces de:
 
